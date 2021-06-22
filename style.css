@@ -6,6 +6,7 @@
 body {
     box-sizing: border-box;
     background-color: #000 !important;
+    color: #fff !important;
 }
 
 header {
@@ -13,40 +14,139 @@ header {
 }
 
 nav {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
-.header_company-name {
-    display: inline-block;
-    width: 60%;
-    padding: 20px 0;
-    font-size: 2em;
+.wrapper {
+    border-bottom: 2px solid #fff;
 }
 
-.header_menu {
+.wrapper__h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 40px 0 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+}
+
+.inner {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+/* headerここから */
+.header__company-name {
+    display: inline-block;
+    width: 80%;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+.header__menu {
     width: 60%;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
+    font-size: .8em;
     transition-property: letter-spacing width;
     /* transition-timing-function: 1s; */
-    transition-duration: .5s;
+    transition-duration: .4s;
 }
 
-.header_menu:hover {
-    width: 80%;
+.header__menu:hover {
+    width: 100%;
     text-decoration: none;
     color: #fff;
     letter-spacing: 4px;
 }
 
-.header_contents {
+.header__contents {
     display: inline-block;
 }
 
-.header_contents-2 {
+.header__contents-2 {
     text-align: center;
 }
+/* headerここまで */
+
+/* wrapper-1ここから */
+.wrapper-1 {
+    background-image: url("./images/nomura.JPG");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.wrapper-1__catch-copy {
+    padding: 10px 20px;
+    font-size: 3em;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+/* wrapper-1ここまで */
+
+/* wrapper-2ここから */
+.info-area {
+    margin: 20px 0 60px 0;
+}
+
+.info {
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #fff;
+    font-size: 1.2em;
+}
+
+.info-data {
+    display: inline-block;
+}
+
+.date {
+    width: 15%;
+    text-align: left;
+}
+
+.sentence {
+    width: 85%;
+    text-align: left;
+}
+/* wrapper-2ここまで */
+
+/* wrapper-3ここから */
+.wrapper-3 {
+    background-image: url("./images/background.jpg");
+    height: 1000px;
+}
+
+.image-area {
+    width: 25%;
+    display: inline-block;
+}
+
+.image {
+    width: 100%;
+}
+/* wrapper-3ここまで */
+
+/* wrapper-4ここから */
+
+/* wrapper-4ここまで */
+
+/* wrapper-5ここから */
+
+/* wrapper-5ここまで */
+
+/* wrapper-6ここから */
+
+/* wrapper-6ここまで */
+
+/* wrapper-7ここから */
+
+/* wrapper-7ここまで */

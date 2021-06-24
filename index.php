@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css?ver=3">
+    <link rel="stylesheet" href="./style.css?ver=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>@TODO</title>
 </head>
 <body>
     <header>
         <!-- 会社名 -->
-        <nav>
+        <nav class="nav-pc">
             <div class="row">
                 <div class="col-xl-4 header__contents header__contents-1"><a class="header header__company-name" href="./">@TODO店名</a></div>
                 <div class="col-xl-2 header__contents header__contents-2">
@@ -41,7 +41,8 @@
             </div>
         </nav>
         
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light nav-mobile">
+            <div class="aaa">
                     <a class="navbar-brand" href="#scroll-1">
                         <div class="row nav__logo-area_sp">
                             <!-- <div class="nav__logo-item col-4 px-0"><img src="./images/logo.webp" alt="ロゴ"></div> -->
@@ -51,6 +52,8 @@
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+            </div>
+            <div class="bbb">
                     <div class="navbar-collapse collapse" id="navbarNav" style="">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
@@ -70,7 +73,8 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+            </div>
+        </nav>
     </header>
     
     <main>

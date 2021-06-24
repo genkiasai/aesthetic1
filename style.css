@@ -100,17 +100,54 @@ nav {
     background-color: #000 !important;
 }
 
-.nav__logo-name_bold,
-.nav__logo-name_nomal {
-    color: #fff;
-}
-
 .navbar {
     width: 100%;
     color: #fff !important;
     background-color: #000 !important;
     border: 1px solid #fff;
 }
+
+.nav__logo-name_bold,
+.nav__logo-name_nomal {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+
+
+
+.nav-mobile {
+    display: none !important;
+}
+
+.navbar {
+    padding: 0 !important;
+    display: block !important;
+}
+
+.aaa,
+.bbb {
+    padding: 0 1rem;
+    display: none !important;
+}
+
+.aaa {
+    padding-top: .5rem;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-collapse {
+    padding-bottom: .5rem;
+}
+
+
+
 /* headerここまで */
 
 /* wrapper-1ここから */
@@ -304,3 +341,19 @@ nav {
     margin: 60px 0;
 }
 /* wrapper-7ここまで */
+
+@media screen and (max-width: 575px) {
+    .nav-pc {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .aaa,
+    .bbb {
+        padding: 0 1rem;
+        display: block !important;
+    }
+}

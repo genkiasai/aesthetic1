@@ -87,6 +87,30 @@ nav {
 .header__contents-2 {
     text-align: center;
 }
+
+
+.navbar-light .navbar-toggler {
+    /* color: rgba(0,0,0,.5); */
+    /* border-color: rgba(0,0,0,.1); */
+    color: #fff;
+    background-color: #fff;
+}
+
+.bg-light {
+    background-color: #000 !important;
+}
+
+.nav__logo-name_bold,
+.nav__logo-name_nomal {
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    color: #fff !important;
+    background-color: #000 !important;
+    border: 1px solid #fff;
+}
 /* headerここまで */
 
 /* wrapper-1ここから */
@@ -215,7 +239,7 @@ nav {
     height: 200px;
     display: inline-block;
     border: 1px solid #fff;
-    overflow: scroll;
+    overflow: hidden;
     text-align: left;
 }
 

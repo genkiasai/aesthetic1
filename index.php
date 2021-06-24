@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css?ver=3">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>@TODO</title>
 </head>
@@ -40,6 +40,37 @@
                 </div>
             </div>
         </nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#scroll-1">
+                        <div class="row nav__logo-area_sp">
+                            <!-- <div class="nav__logo-item col-4 px-0"><img src="./images/logo.webp" alt="ロゴ"></div> -->
+                            <div class="nav__logo-name col-8 px-0"><span class="nav__logo-name_bold">もくらん建設</span><br><span class="nav__logo-name_nomal">株式会社</span></div>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNav" style="">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#scroll-1">ホーム <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scroll-2">サービス</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scroll-3">会社情報</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scroll-5">実績紹介</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scroll-7">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
     </header>
     
     <main>

@@ -33,7 +33,7 @@ nav {
 .inner {
     text-align: center;
     width: 70%;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 40px auto;
 }
 
 .wrapper-3,
@@ -152,7 +152,7 @@ nav {
 
 /* wrapper-1ここから */
 .wrapper-1 {
-    background-image: url("./images/nomura.JPG");
+    background-image: url("./images/nomura-lg.png");
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
@@ -167,39 +167,48 @@ nav {
     position: absolute;
     top: 20%;
     right: 10%;
+    width: 30%;
+    min-width: 180px;
 }
 
 /* wrapper-1ここまで */
 
 /* wrapper-2ここから */
 .info-area {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .info {
     margin: 20px 0 0 0;
     border-bottom: 2px solid #fff;
     font-size: 1.2em;
-}
-
-.info-data {
-    display: inline-block;
+    width: 100%;
 }
 
 .date {
-    width: 15%;
     text-align: left;
 }
 
 .sentence {
-    width: 85%;
     text-align: left;
 }
 /* wrapper-2ここまで */
 
 /* wrapper-3ここから */
 .images-area {
-    margin: 40px 0;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.images-area:before,
+.images-area:after {
+    content: "";
+    width: 21%;
+}
+.images-area:before {
+    order: 1;
 }
 
 .arrow-area {
@@ -220,7 +229,9 @@ nav {
 }
 
 .image-area {
-    width: 20%;
+    position: relative;
+    width: 21%;
+    margin-top: 10px;
     display: inline-block;
     transition-property: box-shadow;
     transition-duration: .3s;
@@ -230,20 +241,16 @@ nav {
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);
 }
 
-.image-area-2 {
+/* .image-area-2 {
     margin: 0 20px 0 40px;
 }
 
 .image-area-3 {
     margin: 0 40px 0 20px;
-}
+} */
 
 .image {
     width: 100%;
-}
-
-.image-area {
-    position: relative;
 }
 
 .view-more {
@@ -281,17 +288,20 @@ nav {
 }
 
 .message-2 {
-    margin: 0 20px 40px 20px;
+    transform: translate(0, -40px);
 }
 
 .message-area {
-    margin-top: 60px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* wrapper-4ここまで */
 
 /* wrapper-5ここから */
 .menu {
-    margin-top: 60px;
+    margin-top: 40px;
     height: 600px;
     border: 1px solid #fff;
     background-color: #000;
@@ -318,18 +328,11 @@ nav {
 }
 
 .access-item {
-    width: 15%;
     text-align: left;
 }
 
 .sentence {
-    width: 85%;
     text-align: left;
-}
-
-.access-item {
-    position: absolute;
-    bottom: 0;
 }
 /* wrapper-6ここまで */
 
@@ -342,18 +345,161 @@ nav {
 }
 /* wrapper-7ここまで */
 
-@media screen and (max-width: 575px) {
+/* iPad Pro */
+@media  screen and (max-width: 1200px) {
+    .inner {
+        width: 80%;
+    }
+
+    /* headerここから */
+    .nav-pc {
+        width: 100%;
+    }
+
+    .header__contents {
+        font-size: .8em;
+    }
+
+    /* wrapper-1ここから */
+    .wrapper-1__catch-copy {
+        width: 40%;
+    }
+    /* wrapper-1ここまで */
+
+    /* wrapper-2ここから */
+    .info {
+        font-size: 1.0em;
+    }
+    /* wrapper-2ここまで */
+
+    /* wrapper-3ここから */
+    
+    /* wrapper-3ここまで */
+
+    /* wrapper-4ここから */
+    
+    /* wrapper-4ここまで */
+
+    /* wrapper-5ここから */
+    
+    /* wrapper-5ここまで */
+
+    /* wrapper-6ここから */
+    
+    /* wrapper-6ここまで */
+
+    /* wrapper-7ここから */
+    
+    /* wrapper-7ここまで */
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper__h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        padding: 20px 0 5px 0;
+    }
+
+    .inner {
+        width: 90%;
+    }
+
+    /* headerここから */
     .nav-pc {
         display: none;
+        width: 100%;
     }
 
     .nav-mobile {
         display: block;
     }
 
-    .aaa,
+    .aaa {
+        display: flex !important;
+        padding: 10px;
+    }
+
     .bbb {
-        padding: 0 1rem;
         display: block !important;
     }
+    /* headerここまで */
+
+    /* wrapper-1ここから */
+    .wrapper-1 {
+        background-image: url("./images/nomura-sm.png");
+    }
+
+    .wrapper-1__catch-copy {
+        font-size: 2.0rem;
+    }
+    /* wrapper-1ここまで */
+
+    /* wrapper-2ここから */
+    .info {
+        display: block;
+        font-size: .6em;
+    }
+
+    .date {
+        width: 100%;
+    }
+
+    .sentence {
+        width: 100%;
+    }
+    /* wrapper-2ここまで */
+
+    /* wrapper-3ここから */
+    .images-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .images-area:before,
+    .images-area:after {
+        content: "";
+        width: 30%;
+    }
+    .images-area:before {
+        order: 1;
+    }
+
+    .image-area {
+        width: 30%;
+    }
+
+    .intro {
+        font-size: .5em;
+    }
+    /* wrapper-3ここまで */
+
+    /* wrapper-4ここから */
+    .message {
+        width: 100%;
+    }
+
+    .message-2 {
+        transform:translate(0);
+        margin: 20px 0;
+    }
+
+    .message-area {
+        margin-top: 40px;
+    }
+    /* wrapper-4ここまで */
+
+    /* wrapper-5ここから */
+    
+    /* wrapper-5ここまで */
+
+    /* wrapper-6ここから */
+    .access {
+        font-size: .6em;
+    }
+    /* wrapper-6ここまで */
+
+    /* wrapper-7ここから */
+    
+    /* wrapper-7ここまで */
 }

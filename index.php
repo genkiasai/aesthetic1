@@ -13,26 +13,26 @@
         <!-- 会社名 -->
         <nav class="nav-pc">
             <div class="row">
-                <div class="col-xl-4 header__contents header__contents-1"><a class="header header__company-name" href="./">@TODO店名</a></div>
-                <div class="col-xl-2 header__contents header__contents-2">
+                <div class="col-xl-4 col-sm-4 header__contents header__contents-1"><a class="header header__company-name" href="./">@TODO店名</a></div>
+                <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
                     <a class="header header__menu header__menu-1" href="./">
                         <div class="header__menu-1-1">HOME</div>
                         <div class="header__menu-1-2">ホーム</div>
                     </a>
                 </div>
-                <div class="col-xl-2 header__contents header__contents-2">
+                <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
                     <a class="header header__menu header__menu-1" href="./">
                         <div class="header__menu-2-1">THERAPIST</div>
                         <div class="header__menu-2-2">セラピスト</div>
                     </a>
                 </div>
-                <div class="col-xl-2 header__contents header__contents-2">
+                <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
                     <a class="header header__menu header__menu-1" href="./">
                         <div class="header__menu-3-1">MENU</div>
                         <div class="header__menu-3-2">メニュー</div>
                     </a>
                 </div>
-                <div class="col-xl-2 header__contents header__contents-2">
+                <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
                     <a class="header header__menu header__menu-1" href="./">
                         <div class="header__menu-4-1">ACCESS</div>
                         <div class="header__menu-4-2">アクセス</div>
@@ -44,9 +44,9 @@
         <nav class="navbar navbar-expand-lg navbar-light nav-mobile">
             <div class="aaa">
                     <a class="navbar-brand" href="#scroll-1">
-                        <div class="row nav__logo-area_sp">
+                        <div class="nav__logo-area_sp">
                             <!-- <div class="nav__logo-item col-4 px-0"><img src="./images/logo.webp" alt="ロゴ"></div> -->
-                            <div class="nav__logo-name col-8 px-0"><span class="nav__logo-name_bold">もくらん建設</span><br><span class="nav__logo-name_nomal">株式会社</span></div>
+                            <div class="nav__logo-name"><span class="nav__logo-name_bold">@TODO店名</span></div>
                         </div>
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,19 +57,16 @@
                     <div class="navbar-collapse collapse" id="navbarNav" style="">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#scroll-1">ホーム <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#scroll-1">ホーム</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scroll-2">サービス</a>
+                                <a class="nav-link" href="#scroll-2">セラピスト</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scroll-3">会社情報</a>
+                                <a class="nav-link" href="#scroll-3">メニュー</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scroll-5">実績紹介</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scroll-7">お問い合わせ</a>
+                                <a class="nav-link" href="#scroll-5">アクセス</a>
                             </li>
                         </ul>
                     </div>
@@ -89,23 +86,21 @@
             <div class="inner inner-2">
                 <h2 class="wrapper__h2">インフォメーション</h2>
                 <div class="info-area">
-                    <div class="row">
-                        <div class="col-xl-12 info info-1">
-                            <div class="float-left info-data date date-1">2021/6/15</div>
-                            <div class="float-right info-data sentence sentence-1">Webサイトが完成しました！</div>
-                        </div>
-                        <div class="col-xl-12 info info-2">
-                            <div class="float-left info-data date date-2">2021/6/15</div>
-                            <div class="float-right info-data sentence sentence-2">Webサイトが完成しました！</div>
-                        </div>
-                        <div class="col-xl-12 info info-3">
-                            <div class="float-left info-data date date-3">2021/6/15</div>
-                            <div class="float-right info-data sentence sentence-3">Webサイトが完成しました！</div>
-                        </div>
-                        <div class="col-xl-12 info info-4">
-                            <div class="float-left info-data date date-4">2021/6/15</div>
-                            <div class="float-right info-data sentence sentence-4">Webサイトが完成しました！</div>
-                        </div>
+                    <div class="info info-1">
+                        <div class="info-data date date-1">2021/6/15</div>
+                        <div class="info-data sentence sentence-1">Webサイトが完成しました！</div>
+                    </div>
+                    <div class="info info-2">
+                        <div class="info-data date date-2">2021/6/15</div>
+                        <div class="info-data sentence sentence-2">Webサイトが完成しました！</div>
+                    </div>
+                    <div class="info info-3">
+                        <div class="info-data date date-3">2021/6/15</div>
+                        <div class="info-data sentence sentence-3">Webサイトが完成しました！</div>
+                    </div>
+                    <div class="info info-4">
+                        <div class="info-data date date-4">2021/6/15</div>
+                        <div class="info-data sentence sentence-4">Webサイトが完成しました！</div>
                     </div>
                 </div>
             </div>
@@ -123,13 +118,13 @@
                     <div class="image-area image-area-3"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
                     <div class="image-area image-area-4"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
                     <!-- <div class="arrow-area arrow-area-2"><a href="./"><img class="arrow-previous" src="./images/arrow-next.png" alt=""></a></div> -->
-                </div>
-                <div class="images-area images-area-2">
+                <!-- </div>
+                <div class="images-area images-area-2"> -->
                     <!-- <div class="arrow-area arrow-area-1"><a href="./"><img class="arrow-previous" src="./images/arrow-previous.png" alt=""></a></div> -->
-                    <div class="image-area image-area-1"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
-                    <div class="image-area image-area-2"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
-                    <div class="image-area image-area-3"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
-                    <div class="image-area image-area-4"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
+                    <div class="image-area image-area-5"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
+                    <div class="image-area image-area-6"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
+                    <div class="image-area image-area-7"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
+                    <div class="image-area image-area-8"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
                     <!-- <div class="arrow-area arrow-area-2"><a href="./"><img class="arrow-previous" src="./images/arrow-next.png" alt=""></a></div> -->
                 </div>
                 <a class="view-more" href="./">View More</a>
@@ -140,14 +135,10 @@
         <!-- wrapper-4 -->
         <div class="wrapper wrapper-4">
             <div class="inner inner-4">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="message-area">
-                            <div class="message message-1">メッセージメッセージメッセージメッセージメッセージ</div>
-                            <div class="message message-2">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
-                            <div class="message message-3">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
-                        </div>
-                    </div>
+                <div class="message-area">
+                    <div class="message message-1">メッセージメッセージメッセージメッセージメッセージ</div>
+                    <div class="message message-2">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
+                    <div class="message message-3">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
                 </div>
             </div>
         </div>
@@ -168,23 +159,21 @@
             <div class="inner inner-6">
                 <h2 class="wrapper__h2">アクセス</h2>
                 <div class="access-area">
-                    <div class="row">
-                        <div class="col-xl-12 access access-1">
-                            <div class="access-item access-address address">場所</div>
-                            <div class="float-right access-address sentence sentence-address">名鉄岐阜駅から西に徒歩5分程度（ご希望があればお迎えに上がります）</div>
-                        </div>
-                        <div class="col-xl-12 access access-2">
-                            <div class="access-item access-tel tel">TEL</div>
-                            <div class="float-right access-tel sentence sentence-tel">000-0000-0000</div>
-                        </div>
-                        <div class="col-xl-12 access access-3">
-                            <div class="access-item access-time time">営業時間</div>
-                            <div class="float-right access-time sentence sentence-time">14:00 - 24:00</div>
-                        </div>
-                        <div class="col-xl-12 access access-4">
-                            <div class="access-item access-holiday holiday">定休日</div>
-                            <div class="float-right access-holiday sentence sentence-holiday">年中無休</div>
-                        </div>
+                    <div class="access access-1">
+                        <div class="access-item access-address address">場所</div>
+                        <div class="access-address sentence sentence-address">名鉄岐阜駅から西に徒歩5分程度（ご希望があればお迎えに上がります）</div>
+                    </div>
+                    <div class="access access-2">
+                        <div class="access-item access-tel tel">TEL</div>
+                        <div class="access-tel sentence sentence-tel">000-0000-0000</div>
+                    </div>
+                    <div class="access access-3">
+                        <div class="access-item access-time time">営業時間</div>
+                        <div class="access-time sentence sentence-time">14:00 - 24:00</div>
+                    </div>
+                    <div class="access access-4">
+                        <div class="access-item access-holiday holiday">定休日</div>
+                        <div class="access-holiday sentence sentence-holiday">年中無休</div>
                     </div>
                 </div>
             </div>

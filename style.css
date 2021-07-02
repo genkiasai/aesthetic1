@@ -194,6 +194,10 @@ nav {
 /* wrapper-2ここから */
 .info-area {
     margin-top: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #fff;
+    padding: 0 20px 20px;
 }
 
 .info {
@@ -547,4 +551,20 @@ nav {
     /* wrapper-7ここから */
     
     /* wrapper-7ここまで */
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+    border-left: solid 1px #ececec;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2px #fff;
 }

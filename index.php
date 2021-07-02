@@ -1,10 +1,30 @@
+<?php
+    try {
+        session_start();
+        require("./dbconnect.php");
+        require("./CCommon.php");
+    
+        $tops = $db->prepare("SELECT * FROM top_page WHERE id=(SELECT MAX(id) FROM top_page)");
+        $tops->execute();
+        $top = $tops->fetch(PDO::FETCH_ASSOC);
+    
+        // インフォメーションの読み込み
+        $infos = $db->prepare("SELECT * FROM top_info ORDER BY id DESC");
+        $infos->execute();
+    } catch (Exception $e) {
+        echo "エラー：" . $e;
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css?ver=1.3">
+    <link rel="stylesheet" href="./style.css?ver=1.4">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>@TODO</title>
 </head>
@@ -77,7 +97,7 @@
     <main>
         <!-- wrapper-1 -->
         <div class="wrapper wrapper-1" id="scroll-1">
-            <h1 class="wrapper-1__catch-copy">キャッチコピー</h1>
+            <h1 class="wrapper-1__catch-copy"><?php echo h($top["catch_copy"]); ?></h1>
         </div>
         <!-- /wrapper-1 -->
 
@@ -86,22 +106,12 @@
             <div class="inner inner-2">
                 <h2 class="wrapper__h2">インフォメーション</h2>
                 <div class="info-area">
-                    <div class="info info-1">
-                        <div class="info-data date date-1">2021/6/15</div>
-                        <div class="info-data sentence sentence-1">Webサイトが完成しました！</div>
-                    </div>
-                    <div class="info info-2">
-                        <div class="info-data date date-2">2021/6/15</div>
-                        <div class="info-data sentence sentence-2">Webサイトが完成しました！</div>
-                    </div>
-                    <div class="info info-3">
-                        <div class="info-data date date-3">2021/6/15</div>
-                        <div class="info-data sentence sentence-3">Webサイトが完成しました！</div>
-                    </div>
-                    <div class="info info-4">
-                        <div class="info-data date date-4">2021/6/15</div>
-                        <div class="info-data sentence sentence-4">Webサイトが完成しました！</div>
-                    </div>
+                    <?php foreach ($infos as $info): ?>
+                        <div class="info info-<?php h($info["id"]); ?>">
+                            <div class="info-data date date-<?php echo h($info["id"]); ?>"><?php echo h($info["year"]) . "/" . h($info["month"]) . "/" . h($info["day"]); ?></div>
+                            <div class="info-data sentence sentence-<?php echo h($info["id"]); ?>"><?php echo h($info["info"]); ?></div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -136,9 +146,9 @@
         <div class="wrapper wrapper-4">
             <div class="inner inner-4">
                 <div class="message-area">
-                    <div class="message message-1">メッセージメッセージメッセージメッセージメッセージ</div>
-                    <div class="message message-2">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
-                    <div class="message message-3">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</div>
+                    <div class="message message-1"><?php echo h($top["message_1"]); ?></div>
+                    <div class="message message-2"><?php echo h($top["message_2"]); ?></div>
+                    <div class="message message-3"><?php echo h($top["message_3"]); ?></div>
                 </div>
             </div>
         </div>
@@ -161,19 +171,19 @@
                 <div class="access-area">
                     <div class="access access-1">
                         <div class="access-item access-address address">場所</div>
-                        <div class="access-address sentence sentence-address">名鉄岐阜駅から西に徒歩5分程度（ご希望があればお迎えに上がります）</div>
+                        <div class="access-address sentence sentence-address"><?php echo h($top["address"]); ?></div>
                     </div>
                     <div class="access access-2">
                         <div class="access-item access-tel tel">TEL</div>
-                        <div class="access-tel sentence sentence-tel">000-0000-0000</div>
+                        <div class="access-tel sentence sentence-tel"><?php echo h($top["tel"]); ?></div>
                     </div>
                     <div class="access access-3">
                         <div class="access-item access-time time">営業時間</div>
-                        <div class="access-time sentence sentence-time">14:00 - 24:00</div>
+                        <div class="access-time sentence sentence-time"><?php echo h($top["time"]); ?></div>
                     </div>
                     <div class="access access-4">
                         <div class="access-item access-holiday holiday">定休日</div>
-                        <div class="access-holiday sentence sentence-holiday">年中無休</div>
+                        <div class="access-holiday sentence sentence-holiday"><?php echo h($top["holiday"]); ?></div>
                     </div>
                 </div>
             </div>

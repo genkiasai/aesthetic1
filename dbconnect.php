@@ -3,13 +3,20 @@
     // $id = "muscle";
     // $password = "1025asai";
     // $db = new PDO("mysql:dbname=practice;host=localhost:8889;charset=utf8", "root", "root");
-    $mysql = "mysql:dbname=aesthetic-01;host=localhost:3306;charset=utf8";
+
+    // WindowsPC
+    // $mysql = "mysql:dbname=aesthetic-01;host=localhost:3306;charset=utf8";
+    // $id = "root";
+    // $password = "1025asai";
+
+
+    $mysql = "mysql:dbname=aesthetic-01;host=localhost:8889;charset=utf8";
     $id = "root";
-    $password = "1025asai";
+    $password = "root";
 
     try {
         $db = new PDO ($mysql, $id, $password);
     } catch (PDOException $e) {
-        print($e->getMessage);
+        throw new Exception("データベース接続エラー: " . $e->getMessage());
     }
 ?>

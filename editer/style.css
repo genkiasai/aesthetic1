@@ -21,6 +21,11 @@ nav {
     margin: 0 auto;
 }
 
+.edit__h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .inner {
     text-align: left;
     width: 60%;
@@ -177,7 +182,7 @@ nav {
 /* mainここまで */
 /* index.phpここまで */
 
-/* top-page.phpここから */
+/* edit-top.phpここから */
 .main__top-page {
     padding-bottom: 60px;
 }
@@ -269,7 +274,80 @@ nav {
 }
 /* save-areaここまで */
 
-/* top-page.phpここまで */
+/* edit-top.phpここまで */
+
+/* edit-status.phpここから */
+/* wrapper-1ここから */
+.submit-change-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#change {
+    padding: 10px 20px;
+}
+/* wrapper-1ここまで */
+/* wrapper-2ここから */
+.table {
+    margin-bottom: 10px;
+}
+
+.status-icon {
+    width: 30%;
+}
+
+.table {
+    text-align: center;
+}
+/* wrapper-2ここまで */
+/* edit-status.phpここまで */
+
+/* record-therapist.phpここから */
+/* wrapper-1ここから */
+.item {
+    margin-top: 20px;
+}
+
+.item-name {
+    display: inline-block;
+    width: 44%;
+}
+
+.input-area {
+    display: inline-block;
+    width: 35%;
+}
+
+.text__record-therapist {
+    width: 100%;
+}
+
+.age {
+    text-align: right;
+    max-width: 160px;
+}
+
+.add {
+    display: inline-block;
+    width: 15%;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 2px;
+}
+/* wrapper-1ここまで */
+
+/*  */
+.js-preaviewImage {
+    width: 90%;
+}
+
+.js-trimmedImg {
+    width: 20%;
+}
+
+/*  */
+/* record-therapist.phpここまで */
+
 
 /* iPad以下 */
 @media screen and (max-width: 768px) {

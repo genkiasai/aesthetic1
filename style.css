@@ -67,6 +67,7 @@ nav {
 .no-margin {
     margin: 0;
 }
+
 /* headerここから */
 .nav-pc {
     width: 100%;
@@ -168,6 +169,7 @@ nav {
 }
 /* headerここまで */
 
+/* index.phpここから */
 /* wrapper-1ここから */
 .wrapper-1 {
     background-image: url("./images/nomura-lg.png");
@@ -177,7 +179,7 @@ nav {
     position: relative;
 }
 
-.wrapper-1__catch-copy {
+.catch-copy {
     padding: 10px 20px;
     font-size: 3em;
     color: #fff;
@@ -393,7 +395,7 @@ nav {
         height: 400px;
     }
 
-    .wrapper-1__catch-copy {
+    .catch-copy {
         width: 40%;
     }
     /* wrapper-1ここまで */
@@ -472,7 +474,7 @@ nav {
         height: 300px;
     }
 
-    .wrapper-1__catch-copy {
+    .catch-copy {
         font-size: 2.0rem;
     }
     /* wrapper-1ここまで */
@@ -552,7 +554,7 @@ nav {
     
     /* wrapper-7ここまで */
 }
-
+/* index.phpここまで */
 
 
 

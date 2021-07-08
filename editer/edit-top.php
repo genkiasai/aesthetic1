@@ -77,27 +77,27 @@
             <div class="row">
                 <div class="col-xl-4 col-sm-4 header__contents header__contents-1"><a class="header header__company-name" href="./">@TODO店名</a></div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-top">
-                        <div class="header__menu-1-1">HOME</div>
-                        <div class="header__menu-1-2">ホーム</div>
+                    <a class="header header__menu header__menu-1" href="./record-therapist.php">
+                        <div class="header__menu-1-1">RECORD</div>
+                        <div class="header__menu-1-2">セラピスト登録</div>
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
                     <a class="header header__menu header__menu-1" href="#scroll-3">
-                        <div class="header__menu-2-1">THERAPIST</div>
-                        <div class="header__menu-2-2">セラピスト</div>
+                        <div class="header__menu-2-1">EDIT</div>
+                        <div class="header__menu-2-2">セラピスト編集</div>
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-5">
-                        <div class="header__menu-3-1">MENU</div>
-                        <div class="header__menu-3-2">メニュー</div>
+                    <a class="header header__menu header__menu-1" href="./edit-status.php">
+                        <div class="header__menu-3-1">WORK</div>
+                        <div class="header__menu-3-2">出勤ステータス</div>
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a href="#scroll-6" class="header header__menu header__menu-1">
-                        <div class="header__menu-4-1">ACCESS</div>
-                        <div class="header__menu-4-2">アクセス</div>
+                    <a href="./edit-top.php" class="header header__menu header__menu-1">
+                        <div class="header__menu-4-1">TOP-PAGE</div>
+                        <div class="header__menu-4-2">トップページ編集</div>
                     </a>
                 </div>
             </div>
@@ -118,16 +118,16 @@
                 <div class="navbar-collapse collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#scroll-top">セラピスト登録</a>
+                            <a class="nav-link" href="./record-therapist.php">セラピスト登録</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#scroll-3">セラピスト編集</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scroll-5">出勤ステータス</a>
+                            <a class="nav-link" href="./edit-status.php">出勤ステータス</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./top-page.php">トップページ編集</a>
+                            <a class="nav-link" href="./edit-top.php">トップページ編集</a>
                         </li>
                     </ul>
                 </div>
@@ -136,6 +136,7 @@
     </header>
 
     <main class="main__top-page">
+        <h1 class="edit__h1">トップページ編集画面</h1>
         <form action="" method="POST">
             <div class="wrapper wrapper-1">
                 <div class="inner inner-1">
@@ -211,7 +212,7 @@
                             </div>
                         </div>
                         <div class="info-area-1-2">
-                            <input class="text text__info" id="text__info" type="text" name="info" placeholder="インフォメーション" <?php if (isset($post["error_info"]) && (count($post["error_info"]) < 4) && $post["info"] !== "") echo "value=$post[info]"; ?>>
+                            <input class="text text__info" id="text__info" type="text" name="info" placeholder="インフォメーション" <?php if (isset($post["error_info"]) && (count($post["error_info"]) < 4) && $post["info"] !== "") echo "value=" . h($post["info"]); ?>>
                         </div>
                     </div>
                     <div class="info-area-2">
@@ -245,25 +246,25 @@
             <div class="wrapper wrapper-4">
                 <div class="inner inner-4">
                     <h2 class="wrapper__h2">アクセス</h2>
-                    <?php if (!empty($post["error"]["address"]) && $post["error"]["address"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>";?>
+                    <?php if (!empty($post["error"]["address"]) && $post["error"]["address"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>"; ?>
                     <div class="accsess__item">
                         <div class="access__item-name">住所</div>
-                        <input class="text text__access text__access_address" id="text__access_address" name="address" type="text" value=<?php echo h($export["address"]); ?>>
+                        <input class="text text__access text__access_address" id="text__access_address" name="address" type="text" value="<?php echo h($export["address"]); ?>">
                     </div>
-                    <?php if (!empty($post["error"]["tel"]) && $post["error"]["tel"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>";?>
+                    <?php if (!empty($post["error"]["tel"]) && $post["error"]["tel"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>"; ?>
                     <div class="accsess__item">
                         <div class="access__item-name">TEL</div>
-                        <input class="text text__access text__access_tel" id="text__access_tel" name="tel" type="text" value=<?php echo h($export["tel"]); ?>>
+                        <input class="text text__access text__access_tel" id="text__access_tel" name="tel" type="text" value="<?php echo h($export["tel"]); ?>">
                     </div>
                     <?php if (!empty($post["error"]["time"]) && $post["error"]["time"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>";?>
                     <div class="accsess__item">
                         <div class="access__item-name">営業時間</div>
-                        <input class="text text__access text__access_time" id="text__access_time" name="time" type="text" value=<?php echo h($export["time"]); ?>>
+                        <input class="text text__access text__access_time" id="text__access_time" name="time" type="text" value="<?php echo h($export["time"]); ?>">
                     </div>
-                    <?php if (!empty($post["error"]["holiday"]) && $post["error"]["holiday"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>";?>
+                    <?php if (!empty($post["error"]["holiday"]) && $post["error"]["holiday"] === "none") echo "<div class='error' style='color:red;'>入力してください</div>"; ?>
                     <div class="accsess__item">
                         <div class="access__item-name">定休日</div>
-                        <input class="text text__access text__access_holiday" id="text__access_holiday" name="holiday" type="text" value=<?php echo h($export["holiday"]); ?>>
+                        <input class="text text__access text__access_holiday" id="text__access_holiday" name="holiday" type="text" value="<?php echo h($export["holiday"]); ?>">
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css?ver=1.4">
+    <link rel="stylesheet" href="./style.css?ver=1.5">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>@TODO</title>
 </head>
@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-xl-4 col-sm-4 header__contents header__contents-1"><a class="header header__company-name" href="./">@TODO店名</a></div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-top">
+                    <a class="header header__menu header__menu-1" href="./">
                         <div class="header__menu-1-1">HOME</div>
                         <div class="header__menu-1-2">ホーム</div>
                     </a>
@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-5">
+                    <a class="header header__menu header__menu-1" href="#scroll---5">
                         <div class="header__menu-3-1">MENU</div>
                         <div class="header__menu-3-2">メニュー</div>
                     </a>
@@ -74,7 +74,7 @@
                     </button>
             </div>
             <div class="menu-list">
-                    <div class="navbar-collapse collapse" id="navbarNav" style="">
+                    <div class="navbar-collapse collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#scroll-top">ホーム</a>
@@ -96,8 +96,8 @@
     
     <main>
         <!-- wrapper-1 -->
-        <div class="wrapper wrapper-1" id="scroll-1">
-            <h1 class="wrapper-1__catch-copy"><?php echo h($top["catch_copy"]); ?></h1>
+        <div class="wrapper wrapper-1 wrapper-1__top" id="scroll-1">
+            <h1 class="catch-copy"><?php echo h($top["catch_copy"]); ?></h1>
         </div>
         <!-- /wrapper-1 -->
 
@@ -137,7 +137,7 @@
                     <div class="image-area image-area-8"><a class="therapist" href="./"><img class="image" src="./images/genki.png" alt=""><div class="intro intro-1"><p class="no-margin">自己紹介</p><p class="no-margin">自己紹介</p></div></a></div>
                     <!-- <div class="arrow-area arrow-area-2"><a href="./"><img class="arrow-previous" src="./images/arrow-next.png" alt=""></a></div> -->
                 </div>
-                <a class="view-more" href="./">View More</a>
+                <a class="view-more" href="./aesthetic.php">View More</a>
             </div>
         </div>
         <!-- /wrapper-3 -->
@@ -155,7 +155,7 @@
         <!-- /wrapper-4 -->
 
         <!-- wrapper-5 -->
-        <div class="wrapper wrapper-5" id="scroll-5">
+        <div class="wrapper wrapper-5" id="scroll-5" scroll-id="scroll---5">
             <div class="inner inner-5">
                 <div class="menu">
                     <h2 class="wrapper__h2">メニュー</h2>
@@ -233,6 +233,7 @@
             $('a[href^="#"]').click(function(){
                 let speed = 1000;
                 let href= $(this).attr("href");
+                // let href= $(this).attr("scroll-id");
                 let target = $(href == "#" || href == "" ? 'html' : href);
                 let position = target.offset().top;
                 $("html, body").animate({scrollTop:position}, speed, "swing");

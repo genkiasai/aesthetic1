@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-xl-4 col-sm-4 header__contents header__contents-1"><a class="header header__company-name" href="./">編集画面</a></div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-top">
+                    <a class="header header__menu header__menu-1" href="./record-therapist.php">
                         <div class="header__menu-1-1">RECORD</div>
                         <div class="header__menu-1-2">セラピスト登録</div>
                     </a>
@@ -26,13 +26,13 @@
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a class="header header__menu header__menu-1" href="#scroll-5">
+                    <a class="header header__menu header__menu-1" href="./edit-status.php">
                         <div class="header__menu-3-1">WORK</div>
                         <div class="header__menu-3-2">出勤ステータス</div>
                     </a>
                 </div>
                 <div class="col-xl-2 col-sm-2 header__contents header__contents-2">
-                    <a href="./top-page.php" class="header header__menu header__menu-1">
+                    <a href="./edit-top.php" class="header header__menu header__menu-1">
                         <div class="header__menu-4-1">TOP-PAGE</div>
                         <div class="header__menu-4-2">トップページ編集</div>
                     </a>
@@ -53,19 +53,19 @@
                     </button>
             </div>
             <div class="menu-list">
-                <div class="navbar-collapse collapse" id="navbarNav" style="">
+                <div class="navbar-collapse collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#scroll-top">セラピスト登録</a>
+                            <a class="nav-link" href="./record-therapist.php">セラピスト登録</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#scroll-3">セラピスト編集</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scroll-5">出勤ステータス</a>
+                            <a class="nav-link" href="./edit-status.php">出勤ステータス</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./top-page.php">トップページ編集</a>
+                            <a class="nav-link" href="./edit-top.php">トップページ編集</a>
                         </li>
                     </ul>
                 </div>
@@ -75,10 +75,10 @@
 
     <main>
         <div class="menu-button-area">
-            <a class="menu-button" href="#">セラピスト登録</a>
+            <a class="menu-button" href="./record-therapist.php">セラピスト登録</a>
             <a class="menu-button" href="#">セラピスト編集</a>
-            <a class="menu-button" href="#">出勤ステータス</a>
-            <a class="menu-button" href="./top-page.php">トップページ編集</a>
+            <a class="menu-button" href="./edit-status.php">出勤ステータス</a>
+            <a class="menu-button" href="./edit-top.php">トップページ編集</a>
         </div>
     </main>
 

@@ -3,6 +3,7 @@
   //選択された画像をプレビュー表示
   //トリミング用のモーダルにも画像をセットする(まだ非表示)
   $(".js-imageFile").on("change", function(){
+    $(".modal-btn").click();
     selectImage();
   });
   

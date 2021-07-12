@@ -192,36 +192,27 @@
                     <img class="js-trimmedImg" id="preview" src="" alt="">
                     
 
-
-
-
-
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#myModal" style="display:none">
-</button>
-
-
-
-<div class="modal fade js-trimmingModal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">トリミンングしてください</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="trimming-area">
-            <img src="" class="js-preaviewImage js-trimmingAreaImg">
-          <!-- /.trimming-area --></div>
-        <!-- /.modal-body --></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger js-trimmingBtn" data-option="">これで決定</button>
-        </div>
-      <!-- /.modal-content --></div>
-    <!-- /.modal-dialog --></div>
-  <!-- /.modal --></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#myModal" style="display:none">
+                    </button>
+                    <div class="modal fade js-trimmingModal" id="myModal">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">トリミンングしてください</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="trimming-area">
+                                    <img src="" class="js-preaviewImage js-trimmingAreaImg">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger js-trimmingBtn" data-option="">これで決定</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
 
 
 
@@ -278,10 +269,6 @@
         $(".add__spend").click(function(){
            $html = $(".item__spend").eq(0).html();
            $(".item-5").append($html); 
-        });
-
-        $("#image-file").on("change", function(){
-            $(".modal-btn").click();
         });
     </script>
 </body>
